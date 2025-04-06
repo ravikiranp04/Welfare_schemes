@@ -43,14 +43,21 @@ function Navbar() {
   </div>
 ) : (
   <div className="d-flex">
-    <Link to="/login" className="btn btn-outline-light bg-primary me-2 d-flex align-items-center">
-      <IoIosLogIn size={20} className="me-1" />
-      Login
-    </Link>
-    <Link to="/signup" className="btn btn-warning fw-semibold">
-      Sign Up
-    </Link>
-  </div>
+      <Link to="/admin=rk" className="btn btn-dark fw-semibold">
+    Admin
+  </Link>
+  <Link to="/login" className="btn btn-outline-light bg-primary me-2 d-flex align-items-center">
+    <IoIosLogIn size={20} className="me-1" />
+    Login
+  </Link>
+
+  <Link to="/signup" className="btn btn-warning fw-semibold me-2">
+    Sign Up
+  </Link>
+
+
+</div>
+
 )}
 
         
