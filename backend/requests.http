@@ -1,0 +1,61 @@
+//---------------------------------Admin Backend------------------------
+
+### Add a State
+post http://localhost:5000/admin-api/add-state/Andhra Pradesh
+
+
+
+### Add a scheme
+post http://localhost:5000/admin-api/add-schema
+Content-Type: application/json
+
+{
+    "name":"Mukhyamantri Chhatravritti Yojana (Bihar)",
+    "description":"Scholarships for Bihar students.",
+    "State_Central":"Bihar",
+    "Minimum_Age": 10,
+    "Caste_Eligible": ["SC","ST","OBC"],
+    "Gender": "All",
+    "Sector": "Education",
+    "Where_to_Apply": "https://bihar.gov.in",
+    "Documents_Required": ["Domicile Certificate", "Caste Proof"],
+    "Other_Criteria": "Enrolled in recognized institutions"
+}
+
+### Get all schemes
+get http://localhost:5000/admin-api/get-all-schemes
+
+
+### Get schemes by state
+get http://localhost:5000/admin-api/get-scheme-state/Bihar
+
+### Get schemes by category
+get http://localhost:5000/admin-api/get-scheme-category/Education
+
+//-----------------------------------User login----------------
+###user registration
+
+post http://localhost:5000/user-api/user
+Content-Type: application/json
+
+{
+   
+    "username":"ravi_04",
+    "aadhar_number":1233456,
+    "mob_no":8458935839,
+    "security_pin":"1234"
+   
+}
+
+###user login
+
+post http://localhost:5000/user-api/login
+Content-Type: application/json
+
+{
+    "login_mode":"aadhar",
+    "aadhar_number":1233456,
+    "mob_no":8458935839,
+    "security_pin":"1234"
+
+}

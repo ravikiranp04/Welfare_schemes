@@ -1,0 +1,32 @@
+.view-details {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.75em;
+}
+
+.highlight-box {
+  transition: transform 0.2s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

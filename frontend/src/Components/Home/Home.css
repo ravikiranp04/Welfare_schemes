@@ -1,0 +1,43 @@
+/* Home.css */
+
+.home-banner {
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Nice purple-blue gradient */
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-container {
+    max-width: 600px;
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+    left: 15px;
+  }
+  
+  /* Tab buttons */
+  .tab-btn {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tab-btn:hover {
+    color: #007bff;
+  }
+  
+  .active-tab {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
